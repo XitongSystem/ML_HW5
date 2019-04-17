@@ -1,0 +1,73 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{CSE 847 (Spring 2019): Machine Learning— Homework 5} % Title of the assignment
+\author{Xitong Zhang\\ \texttt{zhangxit@msu.edu}} 
+\date{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle % Print the title
+\section{K-Means} 
+\begin{figure*}[h!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../K-means.png}
+        \caption{K-Means Results}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Spectral-K-means.png}
+        \caption{Spectral K-Means Results}
+    \end{subfigure}
+    \caption{Clustering Visualization}
+\end{figure*}
+
+\section{PCA} 
+\begin{figure*}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{../raw.png}
+	\caption{Raw images}
+\end{figure*}
+
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../pca_10.png}
+        \caption{10 Principle Components, MSE: 612.7}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../pca_50.png}
+        \caption{50 Principle Components, MSE: 160.5}
+    \end{subfigure}
+\end{figure*}
+
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../pca_100.png}
+        \caption{10 Principle Components, MSE: 55.9}
+    \end{subfigure}%
+    ~
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../pca_200.png}
+        \caption{50 Principle Components, MSE: 5.4}
+    \end{subfigure}
+\end{figure*}
+\end{document}
